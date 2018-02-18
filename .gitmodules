@@ -1,0 +1,3 @@
+[submodule "caffe_illu"]
+	path = caffe_illu
+	url = https://github.com/bacTlink/caffe_illu.git
