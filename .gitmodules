@@ -1,3 +1,6 @@
 [submodule "caffe_illu"]
 	path = caffe_illu
 	url = https://github.com/bacTlink/caffe_illu.git
+[submodule "optix"]
+	path = optix
+	url = https://github.com/bacTlink/optix_illu.git
