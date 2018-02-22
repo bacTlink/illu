@@ -1,10 +1,28 @@
-# illu
+# Compile
 
-Download [OptiX 5.0](https://developer.nvidia.com/designworks/optix/download),
-decompress it,
-and copy ```include``` and ```lib64``` directory into ```optix```.
+Firstly, clone this repo.
+```
+git clone --recursive https://github.com/bacTlink/illu.git
+```
 
-Or simply copy them from ```/home/linzehui/NVIDIA-OptiX-SDK-5.0.0-linux64/```
+Copy ```lib64``` and ```include``` from [OptiX 5.0](https://developer.nvidia.com/designworks/optix/download).
+```
+cp -r /home/linzehui/NVIDIA-OptiX-SDK-5.0.0-linux64/include illu/optix/
+cp -r /home/linzehui/NVIDIA-OptiX-SDK-5.0.0-linux64/lib64 illu/optix/
+```
+
+Create build directory and enter it.
+```
+cd illu
+mkdir build
+cd build
+```
+
+Start compilations.
+```
+cmake ..
+make -j4
+```
 
 # optix
 You can ```#include "caffe/caffe.hpp"``` in optix.
