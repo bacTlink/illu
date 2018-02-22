@@ -35,6 +35,9 @@ A modified version is ```optix/advance_SDK/primePPM```, which is used to generat
 
 primePPM Change log:
 
+1. Remove background, texture, direct flux and ambient light.
+2. Remove GLFWwindow, save output buffer to file.
+
 # OptiX
 You can edit ```CMakeLists.txt``` to switch from ```optix/advance_SDK``` to ```optix/SDK```.
 
